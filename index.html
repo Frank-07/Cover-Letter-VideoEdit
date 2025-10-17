@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter — Franco Agnic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --glass: rgba(255,255,255,0.08); }
+    html { scroll-behavior:smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .bg-aurora {
+      background: radial-gradient(60% 80% at 20% 10%, #a1c4fd55 0%, transparent 60%),
+                  radial-gradient(60% 80% at 80% 0%, #fbc2eb55 0%, transparent 60%),
+                  radial-gradient(80% 80% at 50% 100%, #c2ffd855 0%, transparent 60%),
+                  linear-gradient(120deg, #0b1020, #0e1426 40%, #141a30 100%);
+      background-blend-mode: screen, screen, screen, normal;
+      animation: hue 24s ease-in-out infinite alternate;
+    }
+    @keyframes hue { from { filter:hue-rotate(0deg) saturate(105%);} to { filter:hue-rotate(10deg) saturate(120%);} }
+    .glass { background: var(--glass); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.12); }
+    .shine { box-shadow: 0 10px 25px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.06); }
+    .tag { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); }
+  </style>
+</head>
+<body class="bg-aurora text-white min-h-screen">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10">
+    <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Franco Agnic</h1>
+        <p class="text-base sm:text-lg text-white/80 mt-1">Technical Artist & Video Editor — Unreal Engine 5</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button id="btn-en" class="px-3 py-1.5 rounded-xl text-sm glass hover:bg-white/10 transition">EN</button>
+        <button id="btn-es" class="px-3 py-1.5 rounded-xl text-sm glass hover:bg-white/10 transition">ES</button>
+        <button id="btn-print" class="px-3 py-1.5 rounded-xl text-sm bg-white/10 hover:bg-white/20 transition">Print / Save PDF</button>
+      </div>
+    </header>
+
+    <section class="mt-6 flex flex-wrap gap-2">
+      <span class="tag rounded-2xl px-3 py-1 text-xs sm:text-sm">UE5 · Blueprints · Niagara</span>
+      <span class="tag rounded-2xl px-3 py-1 text-xs sm:text-sm">HLSL custom materials</span>
+      <span class="tag rounded-2xl px-3 py-1 text-xs sm:text-sm">Cinematics & real-time capture</span>
+      <span class="tag rounded-2xl px-3 py-1 text-xs sm:text-sm">Premiere Pro · After Effects</span>
+    </section>
+
+    <main class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <article class="lg:col-span-2 glass shine rounded-2xl p-6 sm:p-8">
+        <div id="cover-en" class="space-y-5">
+          <p class="text-sm text-white/60">Mendoza, Argentina · <span id="today"></span></p>
+          <h2 class="text-xl sm:text-2xl font-bold">Cover Letter</h2>
+          <p>
+            I'm a Technical Artist and Video Editor focused on agile storytelling, cinematic finishing, and real-time rendering with Unreal Engine 5. I combine editing, motion graphics, and in-engine capture to deliver pieces with rhythm, clarity, and style. My work bridges the gap between technical precision and creative flow. I enjoy pushing visual boundaries, experimenting with lighting, camera movement, and composition to bring stories to life in dynamic and emotionally engaging ways. With experience across post-production and real-time workflows, I thrive in projects that blend filmmaking, design, and interactive media. Whether it's a cinematic trailer, a gameplay sequence, or a motion piece, my goal is always the same: to craft visuals that feel alive, cohesive, and memorable.
+          </p>
+          <div class="pt-2">
+            <p class="font-semibold">Best regards,</p>
+            <p class="font-semibold">Franco Agnic</p>
+          </div>
+        </div>
+
+        <div id="cover-es" class="space-y-5 hidden">
+          <p class="text-sm text-white/60">Mendoza, Argentina · <span class="today-es"></span></p>
+          <h2 class="text-xl sm:text-2xl font-bold">Carta de Presentación</h2>
+          <p>
+            Soy Technical Artist y Video Editor enfocado en storytelling ágil, acabado cinematográfico y renderizado en tiempo real con Unreal Engine 5. Combino edición, motion graphics y captura dentro del motor para lograr piezas con ritmo, claridad y estilo. Mi trabajo une la precisión técnica con el flujo creativo. Disfruto empujar los límites visuales, experimentando con la iluminación, el movimiento de cámara y la composición para dar vida a historias de manera dinámica y emocionalmente envolvente. Con experiencia tanto en posproducción como en flujos en tiempo real, me destaco en proyectos que combinan cine, diseño y medios interactivos. Ya sea un tráiler cinematográfico, una secuencia de gameplay o una pieza de motion, mi objetivo siempre es el mismo: crear visuales que se sientan vivos, cohesivos y memorables.
+          </p>
+          <div class="pt-2">
+            <p class="font-semibold">Saludos,</p>
+            <p class="font-semibold">Franco Agnic</p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="space-y-6">
+        <div class="glass shine rounded-2xl p-6 sm:p-7">
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="tel:+542613029570" class="hover:underline">+54 261 302 9570</a></li>
+            <li><a href="mailto:franco.agnic7@gmail.com" class="hover:underline">franco.agnic7@gmail.com</a></li>
+            <li><a href="https://frank-07.github.io/MyPortfolio/" target="_blank" class="hover:underline">Portfolio website</a></li>
+            <li><a href="https://www.artstation.com/francoagnic3" target="_blank" class="hover:underline">ArtStation</a></li>
+            <li><a href="https://www.linkedin.com/in/franco-agnic" target="_blank" class="hover:underline">LinkedIn</a></li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <section class="mt-8 flex flex-wrap gap-3">
+      <a href="https://frank-07.github.io/PortfolioVideoEditing/" target="_blank" class="px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 transition shadow">Go to Portfolio</a>
+      <button id="btn-download" class="px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 transition shadow">Download as PDF</button>
+    </section>
+
+    <footer class="mt-10 text-xs text-white/60">
+      <p>© <span id="year"></span> Franco Agnic · Technical Artist & Video Editor · Unreal Engine 5</p>
+    </footer>
+  </div>
+
+  <script>
+    const btnEn = document.getElementById('btn-en');
+    const btnEs = document.getElementById('btn-es');
+    const en = document.getElementById('cover-en');
+    const es = document.getElementById('cover-es');
+    btnEn.addEventListener('click', ()=>{ en.classList.remove('hidden'); es.classList.add('hidden'); });
+    btnEs.addEventListener('click', ()=>{ es.classList.remove('hidden'); en.classList.add('hidden'); });
+
+    const btnPrint = document.getElementById('btn-print');
+    const btnDownload = document.getElementById('btn-download');
+    const printFn = () => window.print();
+    if(btnPrint) btnPrint.addEventListener('click', printFn);
+    if(btnDownload) btnDownload.addEventListener('click', printFn);
+
+    const now = new Date();
+    const formatter = new Intl.DateTimeFormat('en-US', { year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('today').textContent = formatter.format(now);
+    document.querySelectorAll('.today-es').forEach(el=>{
+      el.textContent = now.toLocaleDateString('es-AR', { year:'numeric', month:'long', day:'numeric' });
+    });
+    document.getElementById('year').textContent = now.getFullYear();
+  </script>
+</body>
+</html>
